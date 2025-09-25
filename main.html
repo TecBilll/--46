@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LifeRoot.bat</title>
+    <link rel="stylesheet" type="text/css" href="style/styles.css" />
+    <link rel="stylesheet" type="text/css" href="style/glide.core.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/glide.theme.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <header id="menu">
+      <div class="logo1" onclick="menuclick()">
+        <img src="img/logo-mini.png" alt="logo-mini">
+      </div>
+      <div class="left">
+        <a href="#">LIFEROOT.BAT</a>
+        <a href="download.html">DOWNLOAD</a>
+        <a href="patch_notes.html">PATCH NOTES</a>
+      </div>
+      <div class="right">
+        <a href="#">SUPPORT</a>
+        <a href="#">DONATE</a>
+      </div>
+    </header>
+
+    <div id="content">
+      <div id="logo">
+        <div class="icon">
+          <img id="ico1" src="img/icon.png"  alt="icon"/>
+        </div>
+        <div class="icon">
+          <img id="ico" src="img/liferoot.png"  alt="liferoot"/>
+        </div>
+      </div>
+
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img class = "img-slide" src="img/mainWall1.png" alt="main"></li>
+            <li class="glide__slide"><img class = "img-slide" src="img/mainWall2.png" alt="main"></li>
+            <li class="glide__slide"><img class = "img-slide" src="img/patch1.png" alt="main"></li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="column">
+          <h3 style="color: white">DESCRIPTION</h3>
+          <p>
+            <b
+              >Have you ever thought about the meaning of life? The main idea of
+              our game is a person who is looking for the meaning of life. We
+              approach the universal tree of life where all information is
+              stored as in a computer. Accordingly, with the help of the
+              terminal, we will look for an answer to the question: "What is the
+              meaning of life?"</b
+            >
+          </p>
+          <p style="color: #99afff; font-size: 16px"><b>Controls:</b></p>
+          <ul>
+            <b>
+              <li>WASD - movement</li>
+              <li>Shift - dash</li>
+              <li>Q - hook</li>
+              <li>LMB - melee</li>
+              <li>E - ranged attack</li>
+            </b>
+          </ul>
+        </div>
+        <div class="column">
+          <iframe id="video"
+            src="https://www.youtube.com/embed/FZcaMSzKZYU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="logo">
+        <img src="img/logo-mini.png" alt="logo-mini">
+      </div>
+      <div class="links">
+        <a href="#">Terms</a>
+        <span>|</span>
+        <a href="#">Legal</a>
+        <span>|</span>
+        <a href="#">Privacy</a>
+      </div>
+      <div class="images">
+        <a href="https://twitter.com/trykutnyk">
+          <img src="img/twitter.svg" alt="twitter"/>
+        </a>
+        <a href="https://www.tiktok.com/@trykutnyk.entertainment">
+          <img src="img/tiktok.svg" alt="tiktok"/>
+        </a>
+        <a href="https://www.instagram.com/trykutnykentertainment/">
+          <img src="img/instagram.svg" alt="instagram"/>
+        </a>
+      </div>
+      <div class="text">
+        <p style="color: #939393; font-size: 10px">&#169; 2023 TRYKUTNYK ENTERTAINMENT, ALL RIGHTS RESERVED</p>
+      </div>
+    </footer>
+    <script src="glide.js"></script>
+    <script>
+      const config = {
+        type: 'carousel'
+      }
+      new Glide('.glide', config).mount();
+    </script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
